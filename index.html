@@ -12,15 +12,14 @@
   <title>Rodrigo Albuquerque Soluções Empresariais</title>
   <style>
     header{
-      background: url(img/office-865091_1920.jpg);
+      background-image: url(img/office-865091_1920.jpg);
       background-size: cover;
       background-position: center;
       min-height: 1000px;
+      max-height: 1000px;
     }
-    @media screen and (max-width: 670px){
-      header{
-        min-height: 500px;
-      }
+    #transparent{
+      background: rgba(0, 0, 0, 0.2);
     }
     .section{
       padding-top: 4vw;
@@ -38,39 +37,74 @@
 
   <!-- navbar -->
   <header>
-    <nav class="nav-wrapper transparent">
-      <div class="container">
-        <a href="#" class="brand-logo">Rodrigo Albuquerque</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Linked In"> 
-            <i class="fab fa-linkedin"></i>
-          </a></li>
-          <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Instagram"> 
-            <i class="fab fa-instagram"></i>
-          </a></li>
-          <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Facebook">
-            <i class="fab fa-facebook"></i>
-          </a></li>
-          <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Twitter">
-            <i class="fab fa-twitter"></i>
-          </a></li>
-        </ul>
-        <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper" id="transparent">
+        <div class="container">
+          <a href="#" class="brand-logo">Rodrigo Albuquerque</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Linked In"> 
+              <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Instagram"> 
+              <i class="fab fa-instagram"></i>
+            </a></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a></li>          
+            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="(71) 9 9999 - 3025">
+              <i class="fab fa-whatsapp"></i>
+            </a></li>
+          </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- Serviços / tabs -->
+<!-- serviços / grid -->
+<section class="container section scrollspy" id="sobre">
+  <div class="row">
+    <div class="col s12 l4">
+      <div class="center-align">
+        <i class="large material-icons">show_chart</i>
+      </div>        
+      <h4 class="align center grey-text text-darken-4">Consultoria Empresarial Personalizada</h4>
+      <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
+    </div>
+    <div class="col s12 l4">
+      <div class="center-align">
+        <i class="large material-icons">business_center</i>
+      </div>        
+      <h4 class="align center grey-text text-darken-4">Análise de inicialização de negócios</h4>
+      <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
+    </div>
+    <div class="col s12 l4">
+      <div class="center-align">
+        <i class="large material-icons">beenhere</i>
+      </div>        
+      <h4 class="align center grey-text text-darken-4">Análise de aquisição de negócio</h4>
+      <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
+    </div>
+</section>
+
+<!-- parallax -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="img/icon-4102192_1280.png" alt="" class="responsive-img">
+  </div>
+</div>
+
+  <!-- tabs -->
   <section class="section container scrollspy" id="servicos">
     <div class="row">
       <div class="col s12">
@@ -147,38 +181,7 @@
     </div>
   </div>
 
-  <!-- photo / grid -->
-  <section class="container section scrollspy" id="sobre">
-    <div class="row">
-      <div class="col s12 l4">
-        <div class="center-align">
-          <i class="large material-icons">show_chart</i>
-        </div>        
-        <h4 class="align center grey-text text-darken-4">Consultoria Empresarial Personalizada</h4>
-        <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
-      </div>
-      <div class="col s12 l4">
-        <div class="center-align">
-          <i class="large material-icons">business_center</i>
-        </div>        
-        <h4 class="align center grey-text text-darken-4">Análise de inicialização de negócios</h4>
-        <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
-      </div>
-      <div class="col s12 l4">
-        <div class="center-align">
-          <i class="large material-icons">beenhere</i>
-        </div>        
-        <h4 class="align center grey-text text-darken-4">Análise de aquisição de negócio</h4>
-        <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
-      </div>
-  </section>
-
-  <!-- parallax -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="img/icon-4102192_1280.png" alt="" class="responsive-img">
-    </div>
-  </div>
+  
 
   <!-- Contato form -->
   <section class="section container scrollspy" id="contato">
@@ -260,6 +263,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
+
+      $(window).scroll(function(){
+
+        if($(window).scrollTop()>940){
+          $('nav').addClass('black');
+        }else{
+          $('nav').removeClass('black');
+        }
+      });
 
       $('.sidenav').sidenav();
       $('.materialboxed').materialbox();
