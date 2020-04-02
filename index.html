@@ -1,44 +1,59 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
   <title>Rodrigo Albuquerque Soluções Empresariais</title>
+
   <style>
-    header{
-      background-image: url(img/office-865091_1920.jpg);
-      background-size: cover;
-      background-position: center;
-      min-height: 1000px;
-      max-height: 1000px;
+    .nav-wrapper {
+      background: url(img/office-865091_1920.jpg);
     }
-    #transparent{
-      background: rgba(0, 0, 0, 0.2);
-    }
-    .section{
+
+    .section {
       padding-top: 4vw;
       padding-bottom: 4vw;
     }
-    .tabs .indicator{
+
+    .tabs .indicator {
       background-color: #000000;
     }
-    .tabs .tab a:focus, .tabs .tab a:focus.active{
+
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
       background: transparent;
     }
+
+    @media screen and (max-width: 670px){
+      a.brand-logo{
+        font-size: 24px;
+      }
+    }
+
+    #transparent{
+      background: rgba(0, 0, 0, 0.3);
+    }
+
   </style>
+
 </head>
+
 <body>
 
   <!-- navbar -->
   <header>
     <div class="navbar-fixed">
-      <nav class="nav-wrapper" id="transparent">
+      <nav class="nav-wrapper">
         <div class="container">
           <a href="#" class="brand-logo">Rodrigo Albuquerque</a>
           <a href="#" class="sidenav-trigger" data-target="mobile-menu">
@@ -48,18 +63,22 @@
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#contato">Contato</a></li>
-            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Linked In"> 
-              <i class="fab fa-linkedin"></i>
-            </a></li>
-            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Instagram"> 
-              <i class="fab fa-instagram"></i>
-            </a></li>
-            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="Facebook">
-              <i class="fab fa-facebook"></i>
-            </a></li>          
-            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="(71) 9 9999 - 3025">
-              <i class="fab fa-whatsapp"></i>
-            </a></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+                data-tooltip="Linked In">
+                <i class="fab fa-linkedin"></i>
+              </a></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+                data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+                data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+                data-tooltip="(71) 9 9999 - 3025">
+                <i class="fab fa-whatsapp"></i>
+              </a></li>
           </ul>
           <ul class="sidenav grey lighten-2" id="mobile-menu">
             <li><a href="#sobre">Sobre</a></li>
@@ -71,46 +90,78 @@
     </div>
   </header>
 
-<!-- serviços / grid -->
-<section class="container section scrollspy" id="sobre">
-  <div class="row">
-    <div class="col s12 l4">
-      <div class="center-align">
-        <i class="large material-icons">show_chart</i>
-      </div>        
-      <h4 class="align center grey-text text-darken-4">Consultoria Empresarial Personalizada</h4>
-      <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
+  <!-- carousel -->
+  <div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect btn-large" href="#contato" id="transparent">marque uma reunião agora</a>
     </div>
-    <div class="col s12 l4">
-      <div class="center-align">
-        <i class="large material-icons">business_center</i>
-      </div>        
-      <h4 class="align center grey-text text-darken-4">Análise de inicialização de negócios</h4>
-      <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
+    <div class="carousel-item red white-text" href="#one!">
+      <h2>Experiência em Consultoria Organizacional</h2>
+      <p class="white-text">Vinte anos de experiência em consultoria organizacional dos mais diversos ramos injetads na sua empresa.</p>
     </div>
-    <div class="col s12 l4">
-      <div class="center-align">
-        <i class="large material-icons">beenhere</i>
-      </div>        
-      <h4 class="align center grey-text text-darken-4">Análise de aquisição de negócio</h4>
-      <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma oportunidade viável.</p>
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Atendimento Personalizado</h2>
+      <p class="white-text">Um modelo de trabalho que se
+        adapta à realidade do seu negócio.</p>
     </div>
-</section>
-
-<!-- parallax -->
-<div class="parallax-container">
-  <div class="parallax">
-    <img src="img/icon-4102192_1280.png" alt="" class="responsive-img">
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
   </div>
-</div>
+
+  <!-- serviços / grid -->
+  <section class="container section scrollspy" id="sobre">
+    <div class="row">
+      <div class="col s12 l4">
+        <div class="center-align">
+          <i class="large material-icons">show_chart</i>
+        </div>
+        <h4 class="align center grey-text text-darken-4">Consultoria Empresarial Personalizada</h4>
+        <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de
+          negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma
+          oportunidade viável.</p>
+      </div>
+      <div class="col s12 l4">
+        <div class="center-align">
+          <i class="large material-icons">business_center</i>
+        </div>
+        <h4 class="align center grey-text text-darken-4">Análise de inicialização de negócios</h4>
+        <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de
+          negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma
+          oportunidade viável.</p>
+      </div>
+      <div class="col s12 l4">
+        <div class="center-align">
+          <i class="large material-icons">beenhere</i>
+        </div>
+        <h4 class="align center grey-text text-darken-4">Análise de aquisição de negócio</h4>
+        <p class="center-align">Quando um empreendedor está pensando em iniciar um novo negócio, um consultor de
+          negócios pode aplicar um determinado processo de análise de inicialização para determinar se é uma
+          oportunidade viável.</p>
+      </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/icon-4102192_1280.png" alt="" class="responsive-img">
+    </div>
+  </div>
 
   <!-- tabs -->
   <section class="section container scrollspy" id="servicos">
     <div class="row">
       <div class="col s12">
         <h2 class="grey-text text-darken-4">O que faço..</h2>
-        <p>Conheço você e sua empresa através de um processo de planejamento de negócio, fornecendo perguntas para responder sobre seu negócio e assim montar um plano para atinjir os objetivos estabelecidos pelo dono.</p>
-        <p>Além disso, auxilio na implementação do plano de negócio, acompanhando seu progresso e o ajustando periodicamente conforme as condições de mercado mudem.</p></br>
+        <p>Conheço você e sua empresa através de um processo de planejamento de negócio, fornecendo perguntas para
+          responder sobre seu negócio e assim montar um plano para atinjir os objetivos estabelecidos pelo dono.</p>
+        <p>Além disso, auxilio na implementação do plano de negócio, acompanhando seu progresso e o ajustando
+          periodicamente conforme as condições de mercado mudem.</p></br>
       </div>
       <div class="col s12">
         <!-- tabs -->
@@ -135,42 +186,63 @@
           </li>
         </ul>
         <div id="p1" class="col s12">
-            <p class="flow-text grey-text text-darken-4">Conhecendo o negócio</p>
-            <p>Em primeiro lugar, passo a conhecer e entender o seu negócio.</p>
-            <p>Como proprietário da empresa, você sabe mais sobre o seu negócios do que qualquer outra pessoa. Por esse motivo, entrevistarei você, seus chefes de departamento e funcionários-chave para entender todos os detalhes do seu negócio.</p>
-            <p>É somente após a compreensão completa do seu negócio que posso começar a ajudá-lo de fato.</p>
+          <p class="flow-text grey-text text-darken-4">Conhecendo o negócio</p>
+          <p>Em primeiro lugar, passo a conhecer e entender o seu negócio.</p>
+          <p>Como proprietário da empresa, você sabe mais sobre o seu negócios do que qualquer outra pessoa. Por esse
+            motivo, entrevistarei você, seus chefes de departamento e funcionários-chave para entender todos os detalhes
+            do seu negócio.</p>
+          <p>É somente após a compreensão completa do seu negócio que posso começar a ajudá-lo de fato.</p>
         </div>
         <div id="p2" class="col s12">
-            <p class="flow-text grey-text text-darken-4">Identificando problemas e oportunidades</p>
-            <p>Depois de aprender os detalhes do seu negócio, inicio um processo para identificar problemas e oportunidades que não foram revelados durante as entrevistas.</p>
-            <p>O consultor traz novos olhos, nova experiência e uma mente aberta à sua empresa, fornecendo uma perspectiva completamente diferente da de alguém que já está trabalhando na empresa por algum tempo ou alguém procurando iniciar um novo empreendimento.</p>
+          <p class="flow-text grey-text text-darken-4">Identificando problemas e oportunidades</p>
+          <p>Depois de aprender os detalhes do seu negócio, inicio um processo para identificar problemas e
+            oportunidades que não foram revelados durante as entrevistas.</p>
+          <p>O consultor traz novos olhos, nova experiência e uma mente aberta à sua empresa, fornecendo uma perspectiva
+            completamente diferente da de alguém que já está trabalhando na empresa por algum tempo ou alguém procurando
+            iniciar um novo empreendimento.</p>
         </div>
         <div id="p3" class="col s12">
           <p class="flow-text grey-text text-darken-4">Analisando o negócio</p>
-          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções e planos sólidos para o futuro.</p>
-          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo comprovado.</p>
+          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
+            e planos sólidos para o futuro.</p>
+          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
+            curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
+          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
+            das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
+            comprovado.</p>
         </div>
         <div id="p4" class="col s12">
           <p class="flow-text grey-text text-darken-4">Criando o plano</p>
-          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções e planos sólidos para o futuro.</p>
-          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo comprovado.</p>
+          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
+            e planos sólidos para o futuro.</p>
+          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
+            curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
+          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
+            das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
+            comprovado.</p>
         </div>
         <div id="p5" class="col s12">
           <p class="flow-text grey-text text-darken-4">Ajustando o plano</p>
-          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções e planos sólidos para o futuro.</p>
-          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo comprovado.</p>
+          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
+            e planos sólidos para o futuro.</p>
+          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
+            curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
+          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
+            das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
+            comprovado.</p>
         </div>
         <div id="p6" class="col s12">
           <p class="flow-text grey-text text-darken-4">Implementando e monitorando</p>
-          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções e planos sólidos para o futuro.</p>
-          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo comprovado.</p>
-        </div>
+          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
+            e planos sólidos para o futuro.</p>
+          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
+            curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
+          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
+            das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
+            comprovado.</p>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -181,17 +253,21 @@
     </div>
   </div>
 
-  
+
 
   <!-- Contato form -->
   <section class="section container scrollspy" id="contato">
     <div class="row">
       <div class="col s12 l5">
         <h2 class="grey-text text-darken-4">Contato</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+          tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
+          scelerisque erat ornare nec.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+          tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
+          scelerisque erat ornare nec.</p>
       </div>
       <div class="col s12 l5 offset-l2">
         <form>
@@ -240,7 +316,8 @@
         <div class="col l6 s12">
           <h5>Sobre Mim</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+            tincidunt orci.</p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Redes Sociais</h5>
@@ -262,29 +339,22 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
-      $(window).scroll(function(){
-
-        if($(window).scrollTop()>940){
-          $('nav').addClass('black');
-        }else{
-          $('nav').removeClass('black');
-        }
-      });
+      $('.carousel.carousel-slider').carousel({ fullWidth: true, indicators: true });
+      var autoplay = true;
+      setInterval(function () { if (autoplay) $('.carousel.carousel-slider').carousel('next'); }, 5000);
+      $('.carousel.carousel-slider').hover(function () { autoplay = false; }, function () { autoplay = true; });
 
       $('.sidenav').sidenav();
       $('.materialboxed').materialbox();
       $('.parallax').parallax();
       $('.tabs').tabs();
-      $('.datepicker').datepicker({
-        disableWeekends: true,
-        yearRange: 1
-      });
+      $('.datepicker').datepicker({ disableWeekends: true, yearRange: 1 });
       $('.tooltipped').tooltip();
       $('.scrollspy').scrollSpy();
-
     });
   </script>
 </body>
+
 </html>
