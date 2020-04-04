@@ -26,7 +26,7 @@
     }
 
     .tabs .indicator {
-      background-color: #000000;
+      background-color: teal;
     }
 
     .tabs .tab a:focus,
@@ -43,6 +43,11 @@
     #transparent {
       background: rgba(0, 0, 0, 0.3);
     }
+
+    #sobre{
+      min-height: 600px;
+    }
+
   </style>
 
 </head>
@@ -54,7 +59,7 @@
     <div class="navbar-fixed">
       <nav class="nav-wrapper">
         <div class="container">
-          <a href="#" class="brand-logo">Rodrigo Albuquerque</a>
+          <a href="#" class="brand-logo"><img src="img/logo.png" alt=""></a>
           <a href="#" class="sidenav-trigger" data-target="mobile-menu">
             <i class="material-icons">menu</i>
           </a>
@@ -94,14 +99,15 @@
     <div class="carousel-fixed-item center">
       <a class="btn waves-effect btn-large" href="#contato" id="transparent">marque uma reunião gratuita agora</a>
     </div>
-    <div class="carousel-item red white-text" href="#one!">
+    <div class="carousel-item teal white-text" href="#one!">
       <div class="row">
         <div class="col s6 offset-s3">
+          <br>
           <h2>5 motivos por que você deveria contratar um consultor</h2>
         </div>
       </div>
     </div>
-    <div class="carousel-item orange lighten-1 white-text" href="#two!">
+    <div class="carousel-item teal white-text" href="#two!">
       <div class="row">
         <div class="col s6 offset-s3">
           <h2>1 - Experiência</h2>
@@ -111,7 +117,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item blue white-text" href="#three!">
+    <div class="carousel-item teal white-text" href="#three!">
       <div class="row">
         <div class="col s6 offset-s3">
           <h2>2 - Novo olhar</h2>
@@ -122,7 +128,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item deep-purple accent-1 white-text" href="#four!">
+    <div class="carousel-item teal white-text" href="#four!">
       <div class="row">
         <div class="col s6 offset-s3">
           <h2>3 - Sentidos aguçados</h2>
@@ -132,7 +138,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item green darken-1 white-text" href="#five!">
+    <div class="carousel-item teal white-text" href="#five!">
       <div class="row">
         <div class="col s6 offset-s3">
           <h2>4 - Network</h2>
@@ -157,7 +163,7 @@
     <div class="row">
       <div class="col s12 l3">
         <div class="center-align">
-          <i class="large material-icons red-text">show_chart</i>
+          <i class="large material-icons teal-text">show_chart</i>
         </div>
         <h5 class="align center grey-text text-darken-4">Consultoria Empresarial Ampla</h5><br>
         <p class="center-align">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perferendis
@@ -165,7 +171,7 @@
       </div>
       <div class="col s12 l3">
         <div class="center-align">
-          <i class="large material-icons blue-text">business_center</i>
+          <i class="large material-icons teal-text">business_center</i>
         </div>
         <h5 class="align center grey-text text-darken-4">Análise de viabilidade de um novo negócio</h5>
         <p class="center-align">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perferendis
@@ -173,7 +179,7 @@
       </div>
       <div class="col s12 l3">
         <div class="center-align">
-          <i class="large material-icons green-text">beenhere</i>
+          <i class="large material-icons teal-text">beenhere</i>
         </div>
         <h5 class="align center grey-text text-darken-4">Análise de aquisição de outro negócio</h5>
         <p class="center-align">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perferendis
@@ -246,111 +252,114 @@
     </div>
   </div>
 
-  <!-- parallax -->
+  <!-- parallax 
   <div class="parallax-container">
     <div class="parallax">
       <img src="img/icon-4102192_1280.png" alt="" class="responsive-img">
     </div>
   </div>
+  -->
 
   <!-- tabs -->
-  <section class="section container scrollspy" id="sobre">
-    <div class="row">
-      <div class="col s12">
-        <h2 class="grey-text text-darken-4">Modelo de trabalho</h2>
-        <p>Conheço você e sua empresa através de um processo de planejamento de negócio, fornecendo perguntas para
-          responder sobre seu negócio e assim montar um plano para atinjir os objetivos estabelecidos pelo dono.</p>
-        <p>Além disso, auxilio na implementação do plano de negócio, acompanhando seu progresso e o ajustando
-          periodicamente conforme as condições de mercado mudem.</p></br>
+  <section class="scrollspy teal white-text" id="sobre">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h2 class="white-text">Modelo de trabalho</h2>
+          <p>Conheço você e sua empresa através de um processo de planejamento de negócio, fornecendo perguntas para
+            responder sobre seu negócio e assim montar um plano para atinjir os objetivos estabelecidos pelo dono.</p>
+          <p>Além disso, auxilio na implementação do plano de negócio, acompanhando seu progresso e o ajustando
+            periodicamente conforme as condições de mercado mudem.</p></br>
+        </div>
+        <div class="col s12">
+          <!-- tabs -->
+          <ul class="tabs">
+            <li class="tab col s2">
+              <a href="#p1" class="active teal-text">passo 1</a>
+            </li>
+            <li class="tab col s2">
+              <a href="#p2" class="teal-text">passo2</a>
+            </li>
+            <li class="tab col s2">
+              <a href="#p3" class="teal-text">passo3</a>
+            </li>
+            <li class="tab col s2">
+              <a href="#p4" class="teal-text">passo4</a>
+            </li>
+            <li class="tab col s2">
+              <a href="#p5" class="teal-text">passo5</a>
+            </li>
+            <li class="tab col s2">
+              <a href="#p6" class="teal-text">passo6</a>
+            </li>
+          </ul>
+          <div id="p1" class="col s12">
+            <p class="flow-text">Conhecendo o negócio</p>
+            <p>Em primeiro lugar, passo a conhecer e entender o seu negócio.</p>
+            <p>Como proprietário da empresa, você sabe mais sobre o seu negócios do que qualquer outra pessoa. Por esse
+              motivo, entrevistarei você, seus chefes de departamento e funcionários-chave para entender todos os detalhes
+              do seu negócio.</p>
+            <p>É somente após a compreensão completa do seu negócio que posso começar a ajudá-lo de fato.</p>
+          </div>
+          <div id="p2" class="col s12">
+            <p class="flow-text grey-text text-darken-4">Identificando problemas e oportunidades</p>
+            <p>Depois de aprender os detalhes do seu negócio, dou início a um processo para identificar problemas e
+              oportunidades que não foram revelados durante as entrevistas.</p>
+          </div>
+          <div id="p3" class="col s12">
+            <p class="flow-text grey-text text-darken-4">Analisando o negócio</p>
+            <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
+              e planos sólidos para o futuro.</p>
+            <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
+              curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
+            <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
+              das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
+              comprovado.</p>
+          </div>
+          <div id="p4" class="col s12">
+            <p class="flow-text grey-text text-darken-4">Criando o plano</p>
+            <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
+              e planos sólidos para o futuro.</p>
+            <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
+              curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
+            <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
+              das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
+              comprovado.</p>
+          </div>
+          <div id="p5" class="col s12">
+            <p class="flow-text grey-text text-darken-4">Ajustando o plano</p>
+            <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
+              e planos sólidos para o futuro.</p>
+            <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
+              curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
+            <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
+              das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
+              comprovado.</p>
+          </div>
+          <div id="p6" class="col s12">
+            <p class="flow-text grey-text text-darken-4">Implementando e monitorando</p>
+            <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
+              e planos sólidos para o futuro.</p>
+            <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
+              curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
+            <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
+              das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
+              comprovado.</p>
+          </div>
+        </div>
       </div>
-      <div class="col s12">
-        <!-- tabs -->
-        <ul class="tabs">
-          <li class="tab col s2">
-            <a href="#p1" class="active grey-text text-darken-4">passo 1</a>
-          </li>
-          <li class="tab col s2">
-            <a href="#p2" class="grey-text text-darken-4">passo2</a>
-          </li>
-          <li class="tab col s2">
-            <a href="#p3" class="grey-text text-darken-4">passo3</a>
-          </li>
-          <li class="tab col s2">
-            <a href="#p4" class="grey-text text-darken-4">passo4</a>
-          </li>
-          <li class="tab col s2">
-            <a href="#p5" class="grey-text text-darken-4">passo5</a>
-          </li>
-          <li class="tab col s2">
-            <a href="#p6" class="grey-text text-darken-4">passo6</a>
-          </li>
-        </ul>
-        <div id="p1" class="col s12">
-          <p class="flow-text grey-text text-darken-4">Conhecendo o negócio</p>
-          <p>Em primeiro lugar, passo a conhecer e entender o seu negócio.</p>
-          <p>Como proprietário da empresa, você sabe mais sobre o seu negócios do que qualquer outra pessoa. Por esse
-            motivo, entrevistarei você, seus chefes de departamento e funcionários-chave para entender todos os detalhes
-            do seu negócio.</p>
-          <p>É somente após a compreensão completa do seu negócio que posso começar a ajudá-lo de fato.</p>
-        </div>
-        <div id="p2" class="col s12">
-          <p class="flow-text grey-text text-darken-4">Identificando problemas e oportunidades</p>
-          <p>Depois de aprender os detalhes do seu negócio, dou início a um processo para identificar problemas e
-            oportunidades que não foram revelados durante as entrevistas.</p>
-        </div>
-        <div id="p3" class="col s12">
-          <p class="flow-text grey-text text-darken-4">Analisando o negócio</p>
-          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
-            e planos sólidos para o futuro.</p>
-          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
-            curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
-            das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
-            comprovado.</p>
-        </div>
-        <div id="p4" class="col s12">
-          <p class="flow-text grey-text text-darken-4">Criando o plano</p>
-          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
-            e planos sólidos para o futuro.</p>
-          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
-            curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
-            das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
-            comprovado.</p>
-        </div>
-        <div id="p5" class="col s12">
-          <p class="flow-text grey-text text-darken-4">Ajustando o plano</p>
-          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
-            e planos sólidos para o futuro.</p>
-          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
-            curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
-            das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
-            comprovado.</p>
-        </div>
-        <div id="p6" class="col s12">
-          <p class="flow-text grey-text text-darken-4">Implementando e monitorando</p>
-          <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer soluções
-            e planos sólidos para o futuro.</p>
-          <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
-            curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-          <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
-            das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
-            comprovado.</p>
-        </div>
       </div>
     </div>
-    </div>
+    
   </section>
 
-  <!-- parallax -->
+  <!-- parallax 
   <div class="parallax-container">
     <div class="parallax">
       <img src="img/icon-4102192_1280.png" alt="" class="responsive-img">
     </div>
   </div>
-
-
+  -->
 
   <!-- Contato form -->
   <section class="section container scrollspy" id="contato">
@@ -381,10 +390,10 @@
           <div class="input-field">
             <i class="material-icons prefix">date_range</i>
             <input type="text" id="date" class="datepicker">
-            <label for="date">Para quando você precisa do(s) serviço(s)...</label>
+            <label for="date">Clique para escolher uma data</label>
           </div>
           <div class="input-field">
-            <p>Serviços desejados:</p>
+            <p>Serviço(s) desejado(s):</p>
             <p>
               <label>
                 <input type="checkbox">
@@ -394,12 +403,24 @@
             <p>
               <label>
                 <input type="checkbox">
-                <span>Consultorial Pessoal</span>
+                <span>Análise de Viabilidade</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Análise de Aquisição</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Demandas Específicas</span>
               </label>
             </p>
           </div>
           <div class="input-field right">
-            <button class="btn grey darken-4">Enviar</button>
+            <button class="btn teal">Enviar</button>
           </div>
         </form>
       </div>
