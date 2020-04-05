@@ -35,7 +35,7 @@
     }
 
     @media screen and (max-width: 670px) {
-      #sobre {
+      #consultoria {
         text-align: center;
       }
     }
@@ -44,9 +44,31 @@
       background: rgba(0, 0, 0, 0.3);
     }
 
-    #sobre {
+    #consultoria {
       min-height: 600px;
     }
+
+    #setas{
+   position:absolute;
+   top:50%;
+   }
+  .middle-indicator-text{
+   font-size: 4.2rem;
+  }
+  a.middle-indicator-text{
+    color:white !important;
+  }
+.content-indicator{
+    width: 64px;
+    height: 64px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; 
+  }
+    .indicators{
+  	visibility: hidden;
+  }
   </style>
 
 </head>
@@ -63,8 +85,8 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#sobre">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#consultoria">Consultoria</a></li>
             <li><a href="#contato">Contato</a></li>
             <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
                 data-tooltip="Linked In">
@@ -84,8 +106,8 @@
               </a></li>
           </ul>
           <ul class="sidenav grey lighten-2" id="mobile-menu">
-            <li><a href="#sobre">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#consultoria">Consultoria</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
@@ -94,9 +116,17 @@
   </header>
 
   <!-- carousel -->
-  <div class="carousel carousel-slider center">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect btn-large" href="#contato" id="transparent">marque uma reunião gratuita agora</a>
+  <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center middle-indicator" id="setas">
+      <div class="left">
+        <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+       </div>
+       <div class="right">
+       <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+       </div>
+    </div>
+    <div class="carousel-fixed-item center middle-indicator">
+      <a class="btn waves-effect btn-large" href="#contato" id="transparent">marque uma reunião gratuita agora</a><br><br><br>
     </div>
     <div class="carousel-item blue-grey darken white-text" href="#one!">
       <div class="row">
@@ -283,7 +313,7 @@
   -->
 
   <!-- tabs -->
-  <section class="scrollspy blue-grey white-text" id="sobre">
+  <section class="scrollspy blue-grey white-text" id="consultoria">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -486,10 +516,24 @@
   <script>
     $(document).ready(function () {
 
-      $('.carousel.carousel-slider').carousel({ fullWidth: true, indicators: true });
+      $('.carousel.carousel-slider').carousel({ fullWidth: true, indicators: false });
       var autoplay = true;
-      setInterval(function () { if (autoplay) $('.carousel.carousel-slider').carousel('next'); }, 5000);
+      setInterval(function () { if (autoplay) $('.carousel.carousel-slider').carousel('next'); }, 8000);
       $('.carousel.carousel-slider').hover(function () { autoplay = false; }, function () { autoplay = true; });
+
+      // move next carousel
+   $('.moveNextCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('next');
+   });
+
+   // move prev carousel
+   $('.movePrevCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('prev');
+   });
 
       $('.modal').modal();
       $('.sidenav').sidenav();
