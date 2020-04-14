@@ -16,22 +16,9 @@
   <title>Rodrigo Albuquerque Soluções Empresariais</title>
 
   <style>
-    .nav-wrapper {
-      background: url(img/office-865091_1920.jpg);
-    }
-
-    .section {
-      padding-top: 4vw;
-      padding-bottom: 4vw;
-    }
-
-    .tabs .indicator {
-      background-color: #455a64   ;
-    }
-
-    .tabs .tab a:focus,
-    .tabs .tab a:focus.active {
-      background: transparent;
+    #bgi {
+      background-image: url(img/office-865091_1920.jpg);
+      background-size: cover;
     }
 
     @media screen and (max-width: 670px) {
@@ -40,192 +27,262 @@
       }
     }
 
+    .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+
+    .tabs .indicator {
+      background-color: #455a64;
+    }
+
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+      background: transparent;
+    }
+
     #transparent {
       background: rgba(0, 0, 0, 0.3);
     }
 
-    #consultoria {
-      min-height: 600px;
+    #transparentnav {
+      background: rgba(0, 0, 0, 0.5);
     }
 
-    #setas{
-   position:absolute;
-   top:50%;
-   }
-  .middle-indicator-text{
-   font-size: 4.2rem;
-  }
-  a.middle-indicator-text{
-    color:white !important;
-  }
-.content-indicator{
-    width: 64px;
-    height: 64px;
-    background: none;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px; 
-  }
-    .indicators{
-  	visibility: hidden;
-  }
+    #setas {
+      position: absolute;
+      top: 50%;
+    }
+
+    .middle-indicator-text {
+      font-size: 4.2rem;
+    }
+
+    a.middle-indicator-text {
+      color: white !important;
+    }
+
+    .content-indicator {
+      width: 64px;
+      height: 64px;
+      background: none;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+    }
+
+    .indicators {
+      visibility: hidden;
+    }
+
+    .darkred {
+      color: #4E0000;
+    }
   </style>
 
 </head>
 
 <body>
 
-  <!-- navbar -->
-  <header>
-    <div class="navbar-fixed">
-      <nav class="nav-wrapper">
-        <div class="container">
-          <a href="#" class="brand-logo"><img src="img/logo.png" alt=""></a>
-          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#consultoria">Consultoria</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
-                data-tooltip="Linked In">
-                <i class="fab fa-linkedin"></i>
-              </a></li>
-            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
-                data-tooltip="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a></li>
-            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
-                data-tooltip="Facebook">
-                <i class="fab fa-facebook"></i>
-              </a></li>
-            <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
-                data-tooltip="(71) 9 9999 - 3025">
-                <i class="fab fa-whatsapp"></i>
-              </a></li>
-          </ul>
-          <ul class="sidenav grey lighten-2" id="mobile-menu">
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#consultoria">Consultoria</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <div id="bgi">
 
-  <!-- carousel -->
-  <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center middle-indicator" id="setas">
-      <div class="left">
-        <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
-       </div>
-       <div class="right">
-       <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
-       </div>
-    </div>
-    <div class="carousel-fixed-item center middle-indicator">
-      <a class="btn waves-effect btn-large" href="#contato" id="transparent">marque uma reunião gratuita agora</a><br><br><br>
-    </div>
-    <div class="carousel-item blue-grey darken white-text" href="#one!">
-      <div class="row">
-        <div class="col s6 offset-s3">
-          <br>
-          <h2>5 motivos por que você deveria contratar um consultor</h2>
+    <!-- navbar -->
+    <header>
+      <div class="navbar-fixed">
+        <nav class="nav-wrapper" id="transparentnav">
+          <div class="container">
+            <a href="#" class="brand-logo"><img src="img/logo.png" alt=""></a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#consultoria">Consultoria</a></li>
+              <li><a href="#contato">Contato</a></li>
+              <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+                  data-tooltip="Linked In">
+                  <i class="fab fa-linkedin"></i>
+                </a></li>
+              <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+                  data-tooltip="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a></li>
+              <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+                  data-tooltip="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a></li>
+              <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+                  data-tooltip="(71) 9 9999 - 3025">
+                  <i class="fab fa-whatsapp"></i>
+                </a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#consultoria">Consultoria</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel carousel-slider center" data-indicators="true">
+      <div class="carousel-fixed-item center middle-indicator" id="setas">
+        <div class="left">
+          <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i
+              class="material-icons left  middle-indicator-text">chevron_left</i></a>
+        </div>
+        <div class="right">
+          <a href="Siguiente"
+            class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i
+              class="material-icons right middle-indicator-text">chevron_right</i></a>
         </div>
       </div>
-    </div>
-    <div class="carousel-item blue-grey white-text" href="#two!">
-      <div class="row">
-        <div class="col s6 offset-s3">
-          <h2>1 - Experiência</h2>
-          <p class="white-text">Todo o aprendizado adquirido ao longo de mais de 20 anos exercendo a atividade de
-            consultor
-            organizacional nos mais diversos ramos de negócios canalizado para a sua empresa.</p>
+      <div class="carousel-fixed-item center middle-indicator">
+        <a class="btn waves-effect btn-large" href="#contato" id="transparent">marcar reunião gratuita</a><br><br><br>
+      </div>
+      <div class="carousel-item transparent white-text" href="#one!">
+        <div class="row">
+          <div class="col s6 offset-s3">
+            <br>
+            <h2>5 motivos</h2>
+            <h2>por que contratar um consultor</h2>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="carousel-item blue-grey white-text" href="#three!">
-      <div class="row">
-        <div class="col s6 offset-s3">
-          <h2>2 - Novo olhar</h2>
-          <p class="white-text">O consultor traz novos olhos, nova experiência e uma mente aberta à sua empresa,
-            fornecendo
-            uma perspectiva completamente diferente da de alguém que já trabalha na empresa há algum tempo ou de alguém
-            procurando iniciar um novo empreendimento.</p>
+      <div class="carousel-item transparent white-text" href="#two!">
+        <div class="row">
+          <div class="col s6 offset-s3">
+            <h2>1 - Experiência</h2>
+            <p class="white-text">Todo o conhecimento adquirido ao longo de mais de 20 anos exercendo a atividade de
+              consultor organizacional nos mais diversos ramos de negócios, direcionado para a sua empresa.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="carousel-item blue-grey white-text" href="#four!">
-      <div class="row">
-        <div class="col s6 offset-s3">
-          <h2>3 - Sentidos aguçados</h2>
-          <p class="white-text">Seja através de processos compravados ou pura experiência em lidar com isso todos os
-            dias, o
-            consultor é um especialista em identificar os problemas e as oportunidades para a sua empresa.</p>
+      <div class="carousel-item transparent white-text" href="#three!">
+        <div class="row">
+          <div class="col s6 offset-s3">
+            <h2>2 - Visão</h2>
+            <p class="white-text">O consultor traz novos olhos, nova experiência e uma mente aberta à sua empresa,
+              fornecendo uma perspectiva completamente diferente da de alguém que já trabalha na empresa há algum tempo
+              ou de alguém procurando iniciar um novo empreendimento.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="carousel-item blue-grey white-text" href="#five!">
-      <div class="row">
-        <div class="col s6 offset-s3">
-          <h2>4 - Network</h2>
-          <p class="white-text">O consultor possui contato estreito com diversos profissionais do mercado (contadores,
-            advgados, gerentes de bancos, investidores além de outros consultores).</p>
+      <div class="carousel-item transparent white-text" href="#four!">
+        <div class="row">
+          <div class="col s6 offset-s3">
+            <h2>3 - Sentidos aguçados</h2>
+            <p class="white-text">Seja através de processos compravados ou pura experiência em lidar com isso todos os
+              dias, o consultor é um especialista em identificar os problemas e as oportunidades para a sua empresa.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="carousel-item blue-grey white-text" href="#six!">
-      <div class="row">
-        <div class="col s6 offset-s3">
-          <h2>5 - Um bom consultor se paga</h2>
-          <p class="white-text">O que você paga para um bom consultor não não se compara à lucratividade final que suas
-            estratégias proporcionam.</p>
+      <div class="carousel-item transparent white-text" href="#five!">
+        <div class="row">
+          <div class="col s6 offset-s3">
+            <h2>4 - Network</h2>
+            <p class="white-text">Relacionamento estreito com diversos profissionais como contadores, advogados,
+              publicitários, gerentes de bancos, investidores, além de outros consultores.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item transparent white-text" href="#six!">
+        <div class="row">
+          <div class="col s6 offset-s3">
+            <h2>5 - Um bom consultor se paga</h2>
+            <p class="white-text">O desembolso com a consultoria reverte em melhoria dos resultados se pagando em pouco
+              tempo e gerando lucros.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- assinatura -->
+  <section class="section scrollspy grey lighten-2" id="assinatura">
+    <div class="container left-align">
+      <div class="row">
+        <div class="col s6">
+          <q>Consultoria é muito mais que crescimento, resultado para acionistas e benefícios para colaboradores, é
+            fazer acontecer mesmo quando tudo diz o contrário, é quebrar paradigmas, valorizar variáveis que fogem à
+            percepção dos números, pois aqui nada é exato.</q>
+          <p>- Rodrigo Albuquerque</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- serviços / grid -->
-  <section class="container section scrollspy" id="servicos">
+  <section class="section scrollspy black" id="servicos">
     <div class="row">
-      <div class="col s12 l3">
-        <div class="center-align">
-          <i class="large material-icons grey-text text-darken-2">show_chart</i>
+      <div class="col s12 m6 l4">
+        <div class="card transparent">
+          <div class="card-content amber-text text-accent-4">
+            <i class="medium material-icons ">show_chart</i>
+            <h5>Consultoria Ampla</h5>
+            <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium perferendis ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore
+              alias earum a fugit voluptate. <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a></p><br>
+          </div>
         </div>
-        <h5 class="align center blue-grey-text text-darken-4">Consultoria Empresarial Ampla</h5><br>
-        <p class="center-align">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perferendis
-          ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore alias earum a fugit voluptate.
-          <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a></p>
       </div>
-      <div class="col s12 l3">
-        <div class="center-align">
-          <i class="large material-icons grey-text text-darken-2">business_center</i>
+      <div class="col s12 m6 l4">
+        <div class="card transparent">
+          <div class="card-content  amber-text text-accent-4">
+            <i class="medium material-icons">business_center</i>
+            <h5>Análise de viabilidade de um novo projeto</h5>
+            <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium perferendis ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore
+              alias earum a fugit voluptate. <a class="modal-trigger" href="#modalViabilidade">Saiba mais.</a></p>
+          </div>
         </div>
-        <h5 class="align center blue-grey-text text-darken-4">Análise de viabilidade de um novo negócio</h5>
-        <p class="center-align">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perferendis
-          ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore alias earum a fugit voluptate.
-          <a class="modal-trigger" href="#modalViabilidade">Saiba mais.</a></p>
       </div>
-      <div class="col s12 l3">
-        <div class="center-align">
-          <i class="large material-icons grey-text text-darken-2">beenhere</i>
+      <div class="col s12 m6 l4">
+        <div class="card transparent">
+          <div class="card-content amber-text text-accent-4">
+            <i class="medium material-icons ">show_chart</i>
+            <h5>Captação de recursos junto a bancos de fomento</h5>
+            <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium perferendis ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore
+              alias earum a fugit voluptate. <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a></p>
+          </div>
         </div>
-        <h5 class="align center blue-grey-text text-darken-4">Análise de aquisição de outro negócio</h5>
-        <p class="center-align">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perferendis
-          ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore alias earum a fugit voluptate.
-          <a class="modal-trigger" href="#modalAquisicao">Saiba mais.</a></p>
       </div>
-      <div class="col s12 l3">
-        <div class="center-align">
-          <i class="large material-icons grey-text text-darken-2">build</i>
+      <div class="col s12 m6 l4">
+        <div class="card transparent">
+          <div class="card-content amber-text text-accent-4">
+            <i class="medium material-icons ">show_chart</i>
+            <h5>Valuation</h5>
+            <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium perferendis ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore
+              alias earum a fugit voluptate. <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a></p><br><br><br>
+          </div>
         </div>
-        <h5 class="align center blue-grey-text text-darken-4">Demandas Específicas</h5><br>
-        <p class="center-align">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perferendis
-          ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore alias earum a fugit voluptate.
-          <a class="modal-trigger" href="#modalDemandas">Saiba
-            mais.</a></p>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card transparent">
+          <div class="card-content amber-text text-accent-4">
+            <i class="medium material-icons ">show_chart</i>
+            <h5>Planejamento tributário</h5>
+            <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium perferendis ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore
+              alias earum a fugit voluptate. <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card transparent">
+          <div class="card-content amber-text text-accent-4">
+            <i class="medium material-icons ">show_chart</i>
+            <h5>Cargos e salários</h5>
+            <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium perferendis ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore
+              alias earum a fugit voluptate. <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -294,7 +351,7 @@
       <p>
         <br>
           Desenvolvimento de rotinas Adm/Fin<br>
-          Desenvolvimento de um setor<br>        
+          Desenvolvimento de um setor<br>
           Comunicação entre setores<br>
           Captação de recursos junto a instituições financeiras<br>
       </p>
@@ -312,103 +369,41 @@
   </div>
   -->
 
-  <!-- tabs -->
-  <section class="scrollspy blue-grey white-text" id="consultoria">
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <h2 class="white-text">Modelo de trabalho</h2>
-          <p>Conheço você e sua empresa através de um processo de planejamento de negócio, fornecendo perguntas para
-            responder sobre seu negócio e assim montar um plano para atinjir os objetivos estabelecidos pelo dono.</p>
-          <p>Além disso, auxilio na implementação do plano de negócio, acompanhando seu progresso e o ajustando
-            periodicamente conforme as condições de mercado mudem.</p></br>
+  <!-- tabs
+  <section class="section container scrollspy" id="consultoria">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2>O que fazemos</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tempora numquam delectus laborum ipsam ullam
+          amet. Voluptatem, maxime culpa maiores minus beatae ipsa fugiat ducimus iste harum soluta dolores at!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum impedit enim maiores cupiditate alias, illum
+          numquam vero? Ipsa incidunt veniam eaque, doloribus odio eum magni. Dolorem voluptas debitis modi adipisci.
+        </p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+         tabs
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#p1" class="active light-blue-grey-text text-darken-4">1</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#p2" class="light-blue-grey-text text-darken-4">2</a>
+          </li>
+        </ul>
+        <div id="p1" class="col s12">
+          <p class="flow-text">Experiência</p>
+          <p>Todo conhecimento adquirido nos mais diversos ramos de negócios, direcionado para sua empresa.</p>
         </div>
-        <div class="col s12">
-          <!-- tabs -->
-          <ul class="tabs">
-            <li class="tab col s2">
-              <a href="#p1" class="active blue-grey-text text-darken-4">passo 1</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#p2" class="blue-grey-text text-darken-4">passo 2</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#p3" class="blue-grey-text text-darken-4">passo 3</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#p4" class="blue-grey-text text-darken-4">passo 4</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#p5" class="blue-grey-text text-darken-4">passo 5</a>
-            </li>
-            <li class="tab col s2">
-              <a href="#p6" class="blue-grey-text text-darken-4">passo 6</a>
-            </li>
-          </ul>
-          <div id="p1" class="col s12">
-            <p class="flow-text">Conhecendo o negócio</p>
-            <p>Em primeiro lugar, passo a conhecer e entender o seu negócio.</p>
-            <p>Como proprietário da empresa, você sabe mais sobre o seu negócios do que qualquer outra pessoa. Por esse
-              motivo, entrevistarei você, seus chefes de departamento e funcionários-chave para entender todos os
-              detalhes
-              do seu negócio.</p>
-            <p>É somente após a compreensão completa do seu negócio que posso começar a ajudá-lo de fato.</p>
-          </div>
-          <div id="p2" class="col s12">
-            <p class="flow-text">Identificando problemas e oportunidades</p>
-            <p>Depois de aprender os detalhes do seu negócio, dou início a um processo para identificar problemas e
-              oportunidades que não foram revelados durante as entrevistas.</p>
-          </div>
-          <div id="p3" class="col s12">
-            <p class="flow-text">Analisando o negócio</p>
-            <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer
-              soluções
-              e planos sólidos para o futuro.</p>
-            <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
-              curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-            <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
-              das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
-              comprovado.</p>
-          </div>
-          <div id="p4" class="col s12">
-            <p class="flow-text">Criando o plano</p>
-            <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer
-              soluções
-              e planos sólidos para o futuro.</p>
-            <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
-              curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-            <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
-              das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
-              comprovado.</p>
-          </div>
-          <div id="p5" class="col s12">
-            <p class="flow-text">Ajustando o plano</p>
-            <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer
-              soluções
-              e planos sólidos para o futuro.</p>
-            <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
-              curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-            <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
-              das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
-              comprovado.</p>
-          </div>
-          <div id="p6" class="col s12">
-            <p class="flow-text">Implementando e monitorando</p>
-            <p>Depois de indentificar os problemas e oportunidades, analiso as informações coletadas ara fornecer
-              soluções
-              e planos sólidos para o futuro.</p>
-            <p>Muitas vezes, a dono da empresa está tão focado no trabalho de agora que perspectivas e estratégias de
-              curto e longo prazo são negligenciadas ou nem mesmo cogitadas.</p>
-            <p>Traço novas estratégias para resolver os problemas imediatos e ao mesmo tempo tirar o máximo de proveito
-              das oportunidades futuras, minimizando as despesas e maximizando os lucros através de um processo
-              comprovado.</p>
-          </div>
+        <div id="p2" class="col s12">
+          <p class="flow-text">Visão</p>
+          <p>Sua empresa vista em uma perspectiva externa, abrangente e contributiva.</p>
         </div>
       </div>
     </div>
     </div>
-
   </section>
+ -->
+
 
   <!-- parallax 
   <div class="parallax-container">
@@ -422,7 +417,7 @@
   <section class="section container scrollspy" id="contato">
     <div class="row">
       <div class="col s12 l5">
-        <h2 class="blue-grey-text text-darken-4">Contato</h2>
+        <h2 class="light-blue-grey-text text-darken-4">Contato</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
           tincidunt orci.</p>
         <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
@@ -436,16 +431,16 @@
         <form>
           <br>
           <div class="input-field">
-            <i class="material-icons prefix blue-grey-text text-darken-4">email</i>
+            <i class="material-icons prefix light-blue-grey-text text-darken-4">email</i>
             <input type="email" id="email">
             <label for="email">Seu Email</label>
           </div>
-          <div class="input-field blue-grey-text text-darken-4">
+          <div class="input-field light-blue-grey-text text-darken-4">
             <i class="material-icons prefix">message</i>
             <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
             <label for="message">Sua Mensagem</label>
           </div>
-          <div class="input-field blue-grey-text text-darken-4">
+          <div class="input-field light-blue-grey-text text-darken-4">
             <i class="material-icons prefix">date_range</i>
             <input type="text" id="date" class="datepicker">
             <label for="date">Clique para escolher uma data</label>
@@ -478,7 +473,7 @@
             </p>
           </div>
           <div class="input-field right">
-            <button class="btn blue-grey">Enviar</button>
+            <button class="btn black">Enviar</button>
           </div>
         </form>
       </div>
@@ -522,18 +517,18 @@
       $('.carousel.carousel-slider').hover(function () { autoplay = false; }, function () { autoplay = true; });
 
       // move next carousel
-   $('.moveNextCarousel').click(function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      $('.carousel').carousel('next');
-   });
+      $('.moveNextCarousel').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('next');
+      });
 
-   // move prev carousel
-   $('.movePrevCarousel').click(function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      $('.carousel').carousel('prev');
-   });
+      // move prev carousel
+      $('.movePrevCarousel').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('prev');
+      });
 
       $('.modal').modal();
       $('.sidenav').sidenav();
