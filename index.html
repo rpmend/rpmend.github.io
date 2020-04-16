@@ -28,8 +28,12 @@
     }
 
     .section {
-      padding-top: 4vw;
-      padding-bottom: 4vw;
+      padding-top: 3vw;
+      padding-bottom: 3vw;
+    }
+
+    blockquote {
+      border-left: 5px solid grey;
     }
 
     .tabs .indicator {
@@ -96,8 +100,8 @@
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#consultoria">Consultoria</a></li>
+              <li><a href="#assinatura">Consultoria</a></li>
+              <li><a href="#servicos">Serviços</a></li>              
               <li><a href="#contato">Contato</a></li>
               <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
                   data-tooltip="Linked In">
@@ -117,8 +121,8 @@
                 </a></li>
             </ul>
             <ul class="sidenav grey lighten-2" id="mobile-menu">
-              <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#consultoria">Consultoria</a></li>
+              <li><a href="#assinatura">Consultoria</a></li>
+              <li><a href="#servicos">Serviços</a></li>              
               <li><a href="#contato">Contato</a></li>
             </ul>
           </div>
@@ -143,7 +147,8 @@
       <div class="carousel-fixed-item center middle-indicator">
         <a class="btn waves-effect btn-large" href="#contato" id="transparent">marcar reunião gratuita</a><br><br><br>
       </div>
-      <div class="carousel-item transparent white-text" href="#one!">
+      <!-- panels -->
+      <div class="carousel-item transparent grey-text text-lighten-3" href="#one!">
         <div class="row">
           <div class="col s6 offset-s3">
             <br>
@@ -152,49 +157,43 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item transparent white-text" href="#two!">
+      <div class="carousel-item transparent grey-text text-lighten-3" href="#two!">
         <div class="row">
           <div class="col s6 offset-s3">
             <h2>1 - Experiência</h2>
-            <p class="white-text">Todo o conhecimento adquirido ao longo de mais de 20 anos exercendo a atividade de
-              consultor organizacional nos mais diversos ramos de negócios, direcionado para a sua empresa.</p>
+            <p class="grey-text text-lighten-3">Todo o conhecimento adquirido ao longo de mais de 20 anos exercendo a atividade de consultor organizacional nos mais diversos ramos de negócios, direcionado para a sua empresa.</p>
           </div>
         </div>
       </div>
-      <div class="carousel-item transparent white-text" href="#three!">
+      <div class="carousel-item transparent grey-text text-lighten-3" href="#three!">
         <div class="row">
           <div class="col s6 offset-s3">
             <h2>2 - Visão</h2>
-            <p class="white-text">O consultor traz novos olhos, nova experiência e uma mente aberta à sua empresa,
-              fornecendo uma perspectiva completamente diferente da de alguém que já trabalha na empresa há algum tempo
-              ou de alguém procurando iniciar um novo empreendimento.</p>
+            <p class="grey-text text-lighten-3">O consultor traz novos olhos, nova experiência e uma mente aberta à sua empresa, fornecendo uma perspectiva completamente diferente da de alguém que já trabalha na empresa há algum tempo ou de alguém procurando iniciar um novo empreendimento.</p>
           </div>
         </div>
       </div>
-      <div class="carousel-item transparent white-text" href="#four!">
+      <div class="carousel-item transparent grey-text text-lighten-3" href="#four!">
         <div class="row">
           <div class="col s6 offset-s3">
             <h2>3 - Sentidos aguçados</h2>
-            <p class="white-text">Seja através de processos compravados ou pura experiência em lidar com isso todos os
-              dias, o consultor é um especialista em identificar os problemas e as oportunidades para a sua empresa.</p>
+            <p class="grey-text text-lighten-3">Seja através de processos compravados ou pura experiência em lidar com isso todos os dias, o consultor é um especialista em identificar os problemas e as oportunidades para a sua empresa.</p>
           </div>
         </div>
       </div>
-      <div class="carousel-item transparent white-text" href="#five!">
+      <div class="carousel-item transparent grey-text text-lighten-3" href="#five!">
         <div class="row">
           <div class="col s6 offset-s3">
             <h2>4 - Network</h2>
-            <p class="white-text">Relacionamento estreito com diversos profissionais como contadores, advogados,
-              publicitários, gerentes de bancos, investidores, além de outros consultores.</p>
+            <p class="grey-text text-lighten-3">Relacionamento estreito com diversos profissionais como contadores, advogados,publicitários, gerentes de bancos, investidores, além de outros consultores.</p>
           </div>
         </div>
       </div>
-      <div class="carousel-item transparent white-text" href="#six!">
+      <div class="carousel-item transparent grey-text text-lighten-3" href="#six!">
         <div class="row">
           <div class="col s6 offset-s3">
             <h2>5 - Um bom consultor se paga</h2>
-            <p class="white-text">O desembolso com a consultoria reverte em melhoria dos resultados se pagando em pouco
-              tempo e gerando lucros.</p>
+            <p class="grey-text text-lighten-3">O desembolso com a consultoria reverte em melhoria dos resultados se pagando em pouco tempo e gerando lucros.</p>
           </div>
         </div>
       </div>
@@ -205,11 +204,13 @@
   <section class="section scrollspy grey lighten-2" id="assinatura">
     <div class="container left-align">
       <div class="row">
-        <div class="col s6">
-          <q>Consultoria é muito mais que crescimento, resultado para acionistas e benefícios para colaboradores, é
-            fazer acontecer mesmo quando tudo diz o contrário, é quebrar paradigmas, valorizar variáveis que fogem à
-            percepção dos números, pois aqui nada é exato.</q>
-          <p>- Rodrigo Albuquerque</p>
+        <div class="col s7">
+          <blockquote>
+            <q>
+              Consultoria é muito mais que crescimento, resultado para acionistas e benefícios para colaboradores, é fazer acontecer mesmo quando tudo diz o contrário, é quebrar paradigmas, valorizar variáveis que fogem à percepção dos números, pois aqui nada é exato.
+            </q>
+          </blockquote>
+          <p>— Rodrigo Albuquerque</p>
         </div>
       </div>
     </div>
@@ -220,7 +221,7 @@
     <div class="row">
       <div class="col s12 m6 l4">
         <div class="card transparent">
-          <div class="card-content amber-text text-accent-4">
+          <div class="card-content grey-text text-lighten-3">
             <i class="medium material-icons ">show_chart</i>
             <h5>Consultoria Ampla</h5>
             <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -231,7 +232,7 @@
       </div>
       <div class="col s12 m6 l4">
         <div class="card transparent">
-          <div class="card-content  amber-text text-accent-4">
+          <div class="card-content  grey-text text-lighten-3">
             <i class="medium material-icons">business_center</i>
             <h5>Análise de viabilidade de um novo projeto</h5>
             <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -242,7 +243,7 @@
       </div>
       <div class="col s12 m6 l4">
         <div class="card transparent">
-          <div class="card-content amber-text text-accent-4">
+          <div class="card-content grey-text text-lighten-3">
             <i class="medium material-icons ">show_chart</i>
             <h5>Captação de recursos junto a bancos de fomento</h5>
             <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -253,18 +254,19 @@
       </div>
       <div class="col s12 m6 l4">
         <div class="card transparent">
-          <div class="card-content amber-text text-accent-4">
+          <div class="card-content grey-text text-lighten-3">
             <i class="medium material-icons ">show_chart</i>
             <h5>Valuation</h5>
             <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Praesentium perferendis ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore
-              alias earum a fugit voluptate. <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a></p><br><br><br>
+              alias earum a fugit voluptate. <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a></p>
+            <br><br><br>
           </div>
         </div>
       </div>
       <div class="col s12 m6 l4">
         <div class="card transparent">
-          <div class="card-content amber-text text-accent-4">
+          <div class="card-content grey-text text-lighten-3">
             <i class="medium material-icons ">show_chart</i>
             <h5>Planejamento tributário</h5>
             <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -275,7 +277,7 @@
       </div>
       <div class="col s12 m6 l4">
         <div class="card transparent">
-          <div class="card-content amber-text text-accent-4">
+          <div class="card-content grey-text text-lighten-3">
             <i class="medium material-icons ">show_chart</i>
             <h5>Cargos e salários</h5>
             <p class="left-align grey-text text-lighten-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -427,7 +429,9 @@
         <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
           scelerisque erat ornare nec.</p>
       </div>
-      <div class="col s12 l5 offset-l2">
+
+      <!-- Inputs -->
+      <div class="col s12 l6 offset-l1 ">
         <form>
           <br>
           <div class="input-field">
@@ -445,32 +449,60 @@
             <input type="text" id="date" class="datepicker">
             <label for="date">Clique para escolher uma data</label>
           </div>
-          <div class="input-field">
-            <p>Serviço(s) desejado(s):</p>
-            <p>
-              <label>
-                <input type="checkbox">
-                <span>Consultorial Empresarial</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox">
-                <span>Análise de Viabilidade</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox">
-                <span>Análise de Aquisição</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox">
-                <span>Demandas Específicas</span>
-              </label>
-            </p>
+
+          <!-- Checkboxes -->
+          <p>Serviço(s) desejado(s):</p>
+          <div class="row">
+            <div class="col s6">
+              <div class="input-field">
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Consultorial Ampla</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Análise de Viabilidade</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Captação de recursos</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Demandas Específicas</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="input-field">
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Planejamento tributário</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Cargos e salários</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Valuation</span>
+                  </label>
+                </p>
+              </div>
+            </div>
           </div>
           <div class="input-field right">
             <button class="btn black">Enviar</button>
@@ -491,7 +523,7 @@
             tincidunt orci.</p>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Redes Sociais</h5>
+          <h5 class="grey-text text-lighten-3">Redes Sociais</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
             <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
