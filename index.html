@@ -30,16 +30,6 @@
       background-size: cover;
     }
 
-    @media screen and (max-width: 670px) {
-      #servicos {
-        text-align: center;
-      }
-
-      #servicos {
-        text-align: center;
-      }
-    }
-
     .section {
       padding-top: 3vw;
       padding-bottom: 3vw;
@@ -75,6 +65,11 @@
       background: rgba(0, 0, 0, 0.5);
     }
 
+    #pergunta {
+      position: absolute;
+      top: 10%;
+    }
+
     #setas {
       position: absolute;
       top: 50%;
@@ -103,6 +98,16 @@
 
     .darkred {
       color: #4E0000;
+    }
+
+    @media screen and (max-width: 670px) {
+      #servicos {
+        text-align: center;
+      }
+
+      #servicos {
+        text-align: center;
+      }
     }
   </style>
 
@@ -155,6 +160,9 @@
 
     <!-- carousel -->
     <div class="carousel carousel-slider center" data-indicators="true">
+      <div class="carousel-fixed-item center middle-indicator" id="pergunta">
+        <h5 class="white-text" style="font-weight: bold;">Por que contratar um consultor</h5>
+      </div>
       <div class="carousel-fixed-item center middle-indicator" id="setas">
         <div class="left">
           <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i
@@ -173,52 +181,50 @@
       <div class="carousel-item transparent grey-text text-lighten-3" href="#one!">
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-            <br><br>
-            <h2>Por que contratar um consultor</h2>
+            <br><br><br><br><br>
+            <h2>Experiência</h2>
+            <p class="grey-text text-lighten-3">Todo o conhecimento adquirido nos mais diversos ramos de negócio, a
+              serviço da sua empresa.</p>
           </div>
         </div>
       </div>
       <div class="carousel-item transparent grey-text text-lighten-3" href="#two!">
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-            <h2>1 - Experiência</h2>
-            <p class="grey-text text-lighten-3">Todo o conhecimento adquirido nos mais diversos ramos de negócio, a
-              serviço da sua empresa.</p>
+            <br><br><br><br><br>
+            <h2>Visão</h2>
+            <p class="grey-text text-lighten-3">Opnião externa e independente.</p>
           </div>
         </div>
       </div>
       <div class="carousel-item transparent grey-text text-lighten-3" href="#three!">
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-            <h2>2 - Visão</h2>
-            <p class="grey-text text-lighten-3">Possui uma visão externa e independente.</p>
+            <br><br><br><br><br>
+            <h2>Network</h2>
+            <p class="grey-text text-lighten-3">Informações de diversos profissionais como contadores, advogados,
+              gerentes de bancos, além de outros consultores.</p>
           </div>
         </div>
       </div>
       <div class="carousel-item transparent grey-text text-lighten-3" href="#four!">
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-            <h2>3 - Sentidos aguçados</h2>
-            <p class="grey-text text-lighten-3">Age com assertividade trazendo direcionamento para as ações
-              implementadas.</p>
+            <br><br><br><br><br>
           </div>
         </div>
       </div>
       <div class="carousel-item transparent grey-text text-lighten-3" href="#five!">
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-            <h2>4 - Network</h2>
-            <p class="grey-text text-lighten-3">Traz informações de diversos profissionais como contadores, advogados,
-              gerentes de bancos, além de outros consultores.</p>
+            <br><br><br><br><br>
           </div>
         </div>
       </div>
       <div class="carousel-item transparent grey-text text-lighten-3" href="#six!">
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-            <h2>5 - Questionamento</h2>
-            <p class="grey-text text-lighten-3">O consultor faz perguntas que provocam um olhar questionador sobre o que
-              realmente contribui para o desempenho da empresa.</p>
+            <br><br><br><br><br>                
           </div>
         </div>
       </div>
@@ -234,7 +240,7 @@
             <q>
               Consultoria é muito mais que crescimento, resultado para acionistas e benefícios para colaboradores, é
               valorizar variáveis que fogem à percepção dos números, é quebrar paradigmas e fazer acontecer mesmo quanto
-              tudo diz contrário.
+              tudo diz o contrário.
             </q>
           </blockquote>
           <p>— Rodrigo Albuquerque</p>
