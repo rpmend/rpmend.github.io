@@ -18,12 +18,12 @@
   <title>Rodrigo Albuquerque Soluções Empresariais</title>
 
   <style>
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+      position: absolute;
 
-[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-    position: absolute;
-
-    pointer-events: auto;
-}
+      pointer-events: auto;
+    }
 
     #bgi {
       background-image: url(img/office-865091_1920.jpg);
@@ -122,7 +122,7 @@
       <div class="navbar-fixed">
         <nav class="nav-wrapper" id="transparentnav">
           <div class="container">
-            <a href="#" class="brand-logo"><img src="img/logo2.png" alt=""></a>            
+            <a href="#" class="brand-logo"><img src="img/logo1.png" alt=""></a>
             <a href="#" class="sidenav-trigger" data-target="mobile-menu">
               <i class="material-icons">menu</i>
             </a>
@@ -134,14 +134,14 @@
                   data-tooltip="Linked In">
                   <i class="fab fa-linkedin"></i>
                 </a></li>
-              <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
+              <!-- <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
                   data-tooltip="Instagram">
                   <i class="fab fa-instagram"></i>
                 </a></li>
               <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
                   data-tooltip="Facebook">
                   <i class="fab fa-facebook"></i>
-                </a></li>
+                </a></li> -->
               <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom"
                   data-tooltip="(71) 9 9410 - 5777">
                   <i class="fab fa-whatsapp"></i>
@@ -201,13 +201,13 @@
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
             <br><br><br><br><br>
-            <h2>Network</h2>
-            <p class="grey-text text-lighten-3">Informações de diversos profissionais como contadores, advogados,
+            <h2>Informação</h2>
+            <p class="grey-text text-lighten-3">Network com diversos profissionais como contadores, advogados,
               gerentes de bancos, além de outros consultores.</p>
           </div>
         </div>
       </div>
-      <div class="carousel-item transparent grey-text text-lighten-3" href="#four!">
+      <!-- <div class="carousel-item transparent grey-text text-lighten-3" href="#four!">
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
             <br><br><br><br><br>
@@ -224,10 +224,10 @@
       <div class="carousel-item transparent grey-text text-lighten-3" href="#six!">
         <div class="row">
           <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-            <br><br><br><br><br>                
+            <br><br><br><br><br>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -257,9 +257,8 @@
           <div class="grey-text text-lighten-3">
             <i class="medium material-icons ">build</i>
             <h5>Consultoria Ampla</h5>
-            <p class="left-align grey-text text-lighten-3" id="servicos">Observação e apontamento do que deve ser
-              corrigido
-              ou melhorado em cada departamento, criando Plano de Ações em busca dos resultados projetados.
+            <p class="grey-text text-lighten-3" id="servicos">Observação e apontamento do que deve ser corrigido
+              ou melhorado, criando Plano de Ações em busca dos resultados projetados.
               <!-- <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a> -->
             </p>
           </div>
@@ -268,12 +267,10 @@
       <div class="col s12 m6 l4">
         <div class="servico transparent">
           <div class="grey-text text-lighten-3">
-            <i class="medium material-icons">done_all</i>
-            <h5>Análise de viabilidade</h5>
-            <p class="left-align grey-text text-lighten-3" id="servicos">Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit.
-              Praesentium perferendis ducimus odit labore, dolorum suscipit magni quo ex tempora consequatur tempore
-              alias earum a fugit voluptate.
+            <i class="medium material-icons">border_all</i>
+            <h5>Organização</h5>
+            <p class="grey-text text-lighten-3" id="servicos">Departamentos executando adequadamente suas atividades em
+              plena comunicação com os demais, atingindo os objetivos da empresa.
               <!-- <a class="modal-trigger" href="#modalViabilidade">Saiba mais.</a> -->
             </p>
           </div>
@@ -284,7 +281,7 @@
           <div class="grey-text text-lighten-3">
             <i class="medium material-icons ">attach_money</i>
             <h5>Captação de recursos</h5>
-            <p class="left-align grey-text text-lighten-3" id="servicos">Atendimento da necessidade de capital tanto
+            <p class="grey-text text-lighten-3" id="servicos">Atendimento da necessidade de capital tanto
               para giro quanto
               para ativo fixo, levando projetos de viabilidade a bancos de fomento e comerciais.
               <!-- <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a> -->
@@ -297,7 +294,7 @@
           <div class="grey-text text-lighten-3">
             <i class="medium material-icons ">account_balance_wallet</i>
             <h5>Valuation</h5>
-            <p class="left-align grey-text text-lighten-3" id="servicos">Avaliação do seu negócio com vistas a fusões,
+            <p class="grey-text text-lighten-3" id="servicos">Avaliação do seu negócio com vistas a fusões,
               aquisições,
               cisões e venda. Muito usada também para atrair investidores.
               <!-- <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a> -->
@@ -310,7 +307,7 @@
           <div class="grey-text text-lighten-3">
             <i class="medium material-icons ">gavel</i>
             <h5>Planejamento tributário</h5>
-            <p class="left-align grey-text text-lighten-3" id="servicos">Escolha do melhor regime tributário visando
+            <p class="grey-text text-lighten-3" id="servicos">Escolha do melhor regime tributário visando
               redução de gastos
               e alcance de benefícios fiscais.
               <!-- <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a> -->
@@ -323,8 +320,7 @@
           <div class="grey-text text-lighten-3">
             <i class="medium material-icons ">people</i>
             <h5>RH</h5>
-            <p class="left-align grey-text text-lighten-3" id="servicos">Principal recurso da empresa, levamos
-              treinamento e
+            <p class="grey-text text-lighten-3" id="servicos">Treinamento e
               desenvolvimento, estudo de cargos e salários, organogramas e atribuição de funções e melhoria da
               comunicação entre departamentos.
               <!-- <a class="modal-trigger" href="#modalConsultoria">Saiba mais.</a> -->
@@ -472,11 +468,8 @@
       <div class="row">
         <div class="col s12 l5">
           <h2 class="light-blue-grey-text text-darken-4">Contato</h2>
-          <p>Caso tenha ficado alguma dúvida sobre o nosso trabalho ou queira marcar uma reunião
-            gratuita, sinta-se à vontade para entrar em contato através do número <a href="tel:(71) 9 9410 - 5777">(71)
-              9 9410 - 5777</a> (que também é WhatsApp), pelas redes socias ou preenchendo o formulário ao lado. </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore dolorem culpa omnis, in dolore aliquam
-            soluta aut recusandae eum ducimus nihil quasi sapiente mollitia atque! Placeat sequi consequuntur vitae.</p>
+          <p>Caso queira marcar uma reunião gratuita, sinta-se à vontade para entrar em contato através do WhatsApp <a
+              href="tel:(71) 9 9941 - 0577">(71) 9 9941 - 0577</a> ou através do formulário.</p>
         </div>
         <div class="col s12 l6 offset-l1">
           <form class="gform" method="POST" data-email="example@email.net"
@@ -615,12 +608,12 @@
           <p>Trabalho com Consultoria Organizacional há vinte anos nos mais diversos ramos de negócios.</p>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="grey-text text-lighten-3">Redes Sociais</h5>
+          <!-- <h5 class="grey-text text-lighten-3">Redes Sociais</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
             <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
             <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
