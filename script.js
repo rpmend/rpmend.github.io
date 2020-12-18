@@ -1,48 +1,143 @@
-let themeDots = document.getElementsByClassName('theme-dot')
-
-let theme = localStorage.getItem('theme')
-
-if (theme == null) {
-    setTheme('light')
-}else{
-    setTheme(theme)
+/* Animation */
+function getScreenHeight() {
+    let height = window.innerHeight || docElem.clientHeight || body.clientHeight;
+    return height;
 }
 
-for(var i=0; themeDots.length > i ; i++){
-    themeDots[i].addEventListener('click', function(){
-        let mode = this.dataset.mode
-        console.log('Option clicked:', mode)
-        setTheme(mode)
-    })
+function getScreenWidth() {
+    let width = window.innerWidth || docElem.clientWidth || body.clientWidth;
+    return width;
 }
 
-function setTheme(mode){
-    if (mode == 'light') {
-        document.getElementById('theme-style').href = 'default.css'
+function hidePanel(panel) {
+    panelClasses = panel.classList;
+    if (!panelClasses.contains("hidden")) {
+        panelClasses.add("hidden");
     }
-
-    if (mode == 'blue') {
-        document.getElementById('theme-style').href = 'blue.css'
-    }
-
-    if (mode == 'green') {
-        document.getElementById('theme-style').href = 'green.css'
-    }
-
-    if (mode == 'purple') {
-        document.getElementById('theme-style').href = 'purple.css'
-    }
-
-    localStorage.setItem('theme', mode)
 }
 
-function getName(){
+function showPanel(panel) {
+    panelClasses = panel.classList;
+    if (panelClasses.contains("hidden")) {
+        panelClasses.remove("hidden");
+    }
+}
+
+let width = getScreenWidth();
+let height = getScreenHeight();
+
+const about = document.getElementById("about");
+const resume = document.getElementById("resume");
+const projects = document.getElementById("projects");
+const store = document.getElementById("store");
+const contact = document.getElementById("contact");
+
+//window.addEventListener("resize", getScreenWidth);
+
+document.getElementById("about-trigger").addEventListener("click", function () {
+
+    let width = getScreenWidth();
+
+    if (width > 1200) {
+        showPanel(about);
+        hidePanel(resume);
+        hidePanel(projects);
+        hidePanel(store);
+        hidePanel(contact);
+    }
+
+    window.location.hash = "about";
+
+});
+
+document.getElementById("resume-trigger").addEventListener("click", function () {
+
+    let width = getScreenWidth();
+
+    if (width > 1200) {
+        hidePanel(about);
+        showPanel(resume);
+        hidePanel(projects);
+        hidePanel(store);
+        hidePanel(contact);
+    }
+
+    window.location.hash = "resume";
+
+});
+
+document.getElementById("projects-trigger").addEventListener("click", function () {
+
+    let width = getScreenWidth();
+
+    if (width > 1200) {
+        hidePanel(about);
+        hidePanel(resume);
+        showPanel(projects);
+        hidePanel(store);
+        hidePanel(contact);
+    }
+
+    window.location.hash = "projects";
+
+});
+
+document.getElementById("store-trigger").addEventListener("click", function () {
+
+    let width = getScreenWidth();
+
+    if (width > 1200) {
+        hidePanel(about);
+        hidePanel(resume);
+        hidePanel(projects);
+        showPanel(store);
+        hidePanel(contact);
+    }
+    
+    window.location.hash = "store";
+});
+
+document.getElementById("contact-trigger").addEventListener("click", function () {
+
+    let width = getScreenWidth();
+
+    if (width > 1200) {
+        hidePanel(about);
+        hidePanel(resume);
+        hidePanel(projects);
+        hidePanel(store);
+        showPanel(contact);
+    }
+    
+    window.location.hash = "contact";
+
+});
+
+document.getElementById("contact-trigger-2").addEventListener("click", function () {
+
+    let width = getScreenWidth();
+
+    if (width > 1200) {
+        hidePanel(about);
+        hidePanel(resume);
+        hidePanel(projects);
+        hidePanel(store);
+        showPanel(contact);
+    }
+    
+    window.location.hash = "contact";
+
+});
+
+/* Form */
+
+function getName() {
     var name = document.getElementById('input-name').value;
     alert(name);
     console.log(name);
 }
 
-function updateThankyouMsgWithName(){
-    document.getElementById('display-name').innerHTML = 
-    document.getElementById('input-name').value;
+function updateThankyouMsgWithName() {
+    document.getElementById('display-name').innerHTML =
+        document.getElementById('input-name').value;
 }
