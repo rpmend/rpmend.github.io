@@ -304,8 +304,8 @@ button:focus {
 }
 
 .content-wrapper .content .body-block ul li {
-    list-style: disc;
-    list-style-position: inside;
+    /* list-style: disc;
+    list-style-position: inside; */
     color: var(--secondary-color);
 }
 
