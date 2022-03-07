@@ -50,6 +50,22 @@ document.getElementById("about-trigger").addEventListener("click", function () {
 
 });
 
+document.getElementById("about-trigger-2").addEventListener("click", function () {
+
+    let width = getScreenWidth();
+
+    if (width > 1200) {
+        showPanel(about);
+        hidePanel(resume);
+        hidePanel(projects);
+        hidePanel(store);
+        hidePanel(contact);
+    }
+
+    window.location.hash = "about";
+    
+});
+
 document.getElementById("resume-trigger").addEventListener("click", function () {
 
     let width = getScreenWidth();
@@ -83,6 +99,21 @@ document.getElementById("projects-trigger").addEventListener("click", function (
 });
 
 document.getElementById("store-trigger").addEventListener("click", function () {
+
+    let width = getScreenWidth();
+
+    if (width > 1200) {
+        hidePanel(about);
+        hidePanel(resume);
+        hidePanel(projects);
+        showPanel(store);
+        hidePanel(contact);
+    }
+    
+    window.location.hash = "store";
+});
+
+document.getElementById("store-trigger-2").addEventListener("click", function () {
 
     let width = getScreenWidth();
 

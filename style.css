@@ -361,6 +361,14 @@ button:focus {
     grid-column: 1/3;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
 /* 1200x */
 
 @media screen and (max-width: 1200px) {
